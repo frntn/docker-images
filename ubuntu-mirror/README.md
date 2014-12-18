@@ -1,4 +1,4 @@
-# Docker image with embedded Ubuntu Mirror
+# Docker images with embedded Ubuntu Mirror
 
 ## Description
 
@@ -83,7 +83,7 @@ docker run -ti \
 ### Start mirror container - Serve other hosts (VM or real hosts)
 
 First start the mirror container.
-You must public the local exposed port to your host.
+You must publish the local exposed port to your host.
 
 ```bash
 # Dynamic
