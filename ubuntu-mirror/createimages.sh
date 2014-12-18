@@ -71,7 +71,7 @@ RUN apt-get update ; \
     mkdir -p $wwwpath ; \
     mkdir -p /mirrors ; \
     apt-mirror ; \
-    ln -s /mirrors/mirror/ubuntu-archive.mirrors.proxad.net/ubuntu /var/www/mirror.local/ubuntu ; \
+    ln -s /mirrors/mirror/ubuntu-archive.mirrors.proxad.net/ubuntu $wwwpath/ubuntu ; \
     sed -i '/^daemon/d' /etc/nginx/nginx.conf ; \
     sed -i '/^worker_processes/a daemon off;' /etc/nginx/nginx.conf ; \
     rm /etc/nginx/sites-enabled/default ; \
